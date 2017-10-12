@@ -20,7 +20,7 @@ public class DriverFactory {
     }
 
     private void createNewDriverInstance() {
-        System.setProperty("webdriver.chrome.driver", "src/chromedriver_linux/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/chromedriver_linux/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         driver = new ChromeDriver(options);
