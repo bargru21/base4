@@ -23,6 +23,7 @@ public class DriverFactory {
         System.setProperty("webdriver.chrome.driver", "src/chromedriver_linux/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
+        options.addArguments("--no-sandbox");
         driver = new ChromeDriver(options);
     }
 
